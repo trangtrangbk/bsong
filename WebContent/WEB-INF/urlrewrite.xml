@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlrewrite>
+	<rule>
+		<from>/trang-chu</from>
+		<to>/public/index</to>
+	</rule>	
+	<rule>
+		<from>/danh-muc/(.*)-([0-9]+)-([0-9]+)</from>
+		<to>/public/cat?id=$2&amp;page=$3</to>
+	</rule>
+	<rule>
+		<from>/danh-muc/(.*)-([0-9]+)</from>
+		<to>/public/cat?id=$2</to>
+	</rule>	
+	<rule>
+		<from>/chi-tiet/(.*)-([0-9]+)</from>
+		<to>/public/detail?id=$2</to>
+	</rule>
+</urlrewrite>
